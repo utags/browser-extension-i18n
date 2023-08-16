@@ -1,0 +1,55 @@
+{
+  "name": "browser-extension-i18n",
+  "version": "0.0.2",
+  "description": "I18N module for developing browser extensions and userscripts",
+  "type": "module",
+  "main": "./lib/index.js",
+  "scripts": {
+    "p": "prettier --write .",
+    "lint": "prettier --write . && xo --fix && tsc --noemit",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utags/browser-extension-i18n.git"
+  },
+  "keywords": [
+    "extensions",
+    "userscripts",
+    "utilities",
+    "i18n"
+  ],
+  "author": "Pipecraft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utags/browser-extension-i18n/issues"
+  },
+  "homepage": "https://github.com/utags/browser-extension-i18n#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.243",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6",
+    "xo": "^0.56.0"
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "xo": {
+    "space": 2,
+    "prettier": true,
+    "globals": [
+      "window",
+      "top",
+      "document"
+    ],
+    "rules": {
+      "prefer-destructuring": 0,
+      "capitalized-comments": 0
+    }
+  }
+}
